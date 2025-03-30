@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Toolkit - All-in-One File Conversion Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #2d3436;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .search-bar {
+            max-width: 600px;
+            margin: 2rem auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 30px;
+            border: 2px solid #3498db;
+            font-size: 1rem;
+            padding-right: 120px;
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            background: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Tools Grid */
+        .tools-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .category-title {
+            margin: 2rem 0;
+            color: #2c3e50;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tool-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tool-icon {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 1rem;
+            background: #ffffff;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .search-btn {
+                position: relative;
+                width: 100%;
+                margin-top: 1rem;
+                border-radius: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Digital Toolkit</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#tools">Tools</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Your All-in-One Digital Solution</h1>
+        <p>Convert, edit, and optimize files with ease</p>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search tools...">
+            <button class="search-btn">Search</button>
+        </div>
+    </section>
+
+    <main class="tools-container">
+        <h2 class="category-title">Popular Tools</h2>
+        <div class="tools-grid">
+            <!-- Image Tools -->
+            <div class="tool-card">
+                <i class="fas fa-file-image tool-icon"></i>
+                <h3>Image Converter</h3>
+                <p>Convert between JPG, PNG, WEBP formats</p>
+            </div>
+
+            <div class="tool-card">
+                <a href="image-compressor.html" class="tool-link">
+    <div class="tool-card">
+        <i class="fas fa-compress tool-icon"></i>
+        <h3>Image Compressor</h3>
+        <p>Reduce image size without quality loss</p>
+    </div>
+ </a>
+
+            <!-- PDF Tools -->
+            <div class="tool-card">
+                <i class="fas fa-file-pdf tool-icon"></i>
+                <h3>PDF Converter</h3>
+                <p>Convert PDF to Word, Excel, and more</p>
+            </div>
+
+            <div class="tool-card">
+                <i class="fas fa-file-merge tool-icon"></i>
+                <h3>PDF Merger</h3>
+                <p>Combine multiple PDF files into one</p>
+            </div>
+
+            <!-- Add more tools as needed -->
+        </div>
+
+        <h2 class="category-title">New Tools</h2>
+        <div class="tools-grid">
+            <div class="tool-card">
+                <i class="fas fa-crop tool-icon"></i>
+                <h3>Image Resizer</h3>
+                <p>Resize images while maintaining aspect ratio</p>
+            </div>
+
+            <div class="tool-card">
+                <i class="fas fa-lock tool-icon"></i>
+                <h3>PDF Protector</h3>
+                <p>Add passwords to PDF documents</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-shield-alt feature-icon"></i>
+            <h3>Secure Processing</h3>
+            <p>All files are processed securely and deleted automatically</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-clock feature-icon"></i>
+            <h3>Fast Conversion</h3>
+            <p>Quick processing with cloud-powered technology</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-mobile-alt feature-icon"></i>
+            <h3>Mobile Friendly</h3>
+            <p>Works perfectly on all devices and screen sizes</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Digital Toolkit</h3>
+                <p>Your complete file conversion solution</p>
+            </div>
+            <div class="footer-section">
+                <h3>Tools</h3>
+                <p>Image Tools</p>
+                <p>PDF Tools</p>
+                <p>Document Tools</p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Search functionality
+        document.querySelector('.search-btn').addEventListener('click', () => {
+            const searchTerm = document.querySelector('.search-input').value;
+            // Implement search logic
+        });
+
+        // Tool card click handlers
+        document.querySelectorAll('.tool-card').forEach(card => {
+            card.addEventListener('click', () => {
+                // Handle tool selection
+                const toolName = card.querySelector('h3').textContent;
+                console.log(`Selected tool: ${toolName}`);
+            });
+        });
+    </script>
+</body>
+</html>
